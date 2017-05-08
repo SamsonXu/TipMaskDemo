@@ -25,6 +25,7 @@
     [self createUI];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
     if (![defaults boolForKey:@"hasTipMask"]) {
         _tipMaskView = [[TipMaskView alloc]initWithImages:@[@"Propmt_main1",@"Propmt_main2"]];
         [defaults setBool:YES forKey:@"hasTipMask"];

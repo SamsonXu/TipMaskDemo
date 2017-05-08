@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		735C27041EC04EBC00A763F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 735C27031EC04EBC00A763F8 /* main.m */; };
 		735C27071EC04EBC00A763F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 735C27061EC04EBC00A763F8 /* AppDelegate.m */; };
-		735C270D1EC04EBC00A763F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 735C270B1EC04EBC00A763F8 /* Main.storyboard */; };
 		735C270F1EC04EBC00A763F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 735C270E1EC04EBC00A763F8 /* Assets.xcassets */; };
 		735C27121EC04EBC00A763F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 735C27101EC04EBC00A763F8 /* LaunchScreen.storyboard */; };
 		735C271D1EC04EBC00A763F8 /* TipMaskDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 735C271C1EC04EBC00A763F8 /* TipMaskDemoTests.m */; };
@@ -46,7 +45,6 @@
 		735C27031EC04EBC00A763F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		735C27051EC04EBC00A763F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		735C27061EC04EBC00A763F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		735C270C1EC04EBC00A763F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		735C270E1EC04EBC00A763F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		735C27111EC04EBC00A763F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		735C27131EC04EBC00A763F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 				735C27351EC04EF200A763F8 /* TipMaskView.h */,
 				735C27361EC04EF200A763F8 /* TipMaskView.m */,
 				735C27381EC04FD200A763F8 /* Define.h */,
-				735C270B1EC04EBC00A763F8 /* Main.storyboard */,
 				735C270E1EC04EBC00A763F8 /* Assets.xcassets */,
 				735C27101EC04EBC00A763F8 /* LaunchScreen.storyboard */,
 				735C27131EC04EBC00A763F8 /* Info.plist */,
@@ -288,7 +285,6 @@
 				735C27421EC0506B00A763F8 /* Propmt_main1@3x.png in Resources */,
 				735C27121EC04EBC00A763F8 /* LaunchScreen.storyboard in Resources */,
 				735C270F1EC04EBC00A763F8 /* Assets.xcassets in Resources */,
-				735C270D1EC04EBC00A763F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,14 +348,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		735C270B1EC04EBC00A763F8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				735C270C1EC04EBC00A763F8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		735C27101EC04EBC00A763F8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -552,6 +540,7 @@
 				735C272E1EC04EBC00A763F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		735C272F1EC04EBC00A763F8 /* Build configuration list for PBXNativeTarget "TipMaskDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +549,7 @@
 				735C27311EC04EBC00A763F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		735C27321EC04EBC00A763F8 /* Build configuration list for PBXNativeTarget "TipMaskDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +558,7 @@
 				735C27341EC04EBC00A763F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

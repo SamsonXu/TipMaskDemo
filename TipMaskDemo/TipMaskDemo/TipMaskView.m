@@ -26,10 +26,18 @@
     
     self.imageView = [[UIImageView alloc]initWithFrame:self.frame];
     self.imageView.image = [UIImage imageNamed:imageArray[0]];
-    if (KIPHONE6 == NO) {
-        self.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_temp",imageArray[0]]];
+    
+    /**根据设备类型判断需要添加的图片
+     
+     这里暂时给iphone5图片命名拼接_temp字段，具体命名规范可以根据个人习惯进行修改
+     
+     */
+    
+    if (KIPHONE6 == YES) {
+        self.imageView.image = [UIImage imageNamed:imageArray[0]];
     }else{
-        self.imageView.image = _imageArray[0];
+        self.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_temp",imageArray[0]]];
+        
     };
     self.imageView.userInteractionEnabled = YES;
     [self addSubview:self.imageView];
@@ -55,10 +63,11 @@
         }];
     }else{
         
-        if (KIPHONE6 == NO) {
-            self.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_temp",_imageArray[_imageArray.count-_remainCount]]];
+        if (KIPHONE6 == YES) {
+            self.imageView.image = [UIImage imageNamed:_imageArray[_imageArray.count-_remainCount]];
         }else{
-            self.imageView.image = _imageArray[_imageArray.count-_remainCount];
+            self.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_temp",_imageArray[_imageArray.count-_remainCount]]];
+            
         };
     }
     
